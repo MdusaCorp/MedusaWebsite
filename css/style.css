@@ -35,7 +35,7 @@ body{
 .imgOne{
     width: 450px;
     height: 300px;
-    background-image: url("images/guitare.jpg!d");
+    background-image: url("../images/guitare.jpg!d");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,7 +45,7 @@ body{
 .imgTwo{
     width: 450px;
     height: 300px;
-    background-image: url("images/ghost.jpg");
+    background-image: url("../images/ghost.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,0 +1,85 @@
+body{
+    background-color: #303030;
+    color: white;
+    font-family: Impact;
+}
+
+.menu{
+    background-color: black;
+    width: 25%;
+    height: 100vh;
+    text-align: center;
+    position: fixed;
+    justify-content: space-around;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover {
+    color: #303030;
+}
+
+.nav-item{
+    font-size: 20px;
+}
+.content{
+    margin-left: 25%;
+}
+
+.colOne, .colTwo{
+    text-align: center;
+}
+
+.imgOne{
+    width: 450px;
+    height: 300px;
+    background-image: url("../images/guitare.jpg!d");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+.imgTwo{
+    width: 450px;
+    height: 300px;
+    background-image: url("../images/ghost.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+.rowOne, .rowTwo{
+    display: flex;
+    height: 50%;
+}
+
+.colOne, .colTwo{
+    text-align: center;
+    width: 50%;
+    margin: 2.5%;
+}
+
+#descrOne, #descrTwo{
+    margin-top: 15%;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+@media screen and (max-width: 1270px) {
+    .rowOne, .rowTwo{
+        flex-direction: column;
+        height: auto;
+    }
+    .colOne, .colTwo{
+        width: 100%;
+    }
+
+    #descrOne, #descrTwo{
+        margin-top: 0%;
+    }
+}

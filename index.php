@@ -80,6 +80,27 @@
                     </div>
                 </div>
             </div>
+
+            <div class="contact">
+                <div class="block-contact">
+                    <div class="title-contact">CONTACT</div>
+                    <form class="form-contact" action="function/mail.php">
+                        <div class="field">
+                            <label for="input-name">Nom</label>
+                            <input id="input-name" class="field-input" type="text" name="name">
+                        </div>
+                        <div class="field">
+                            <label for="input-email">Email</label>
+                            <input id="input-email" class="field-input" type="text" name="email">
+                        </div>
+                        <div class="field">
+                            <label for="input-msg">Message</label>
+                            <textarea id="input-msg" class="field-input field-text" name="message"></textarea>
+                        </div>
+                        <input class="input-submit" type="submit" value="Envoyer">
+                    </form>
+                </div>
+            </div>
         </div>
 
     </body>

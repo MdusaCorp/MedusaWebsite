@@ -1,6 +1,6 @@
 <html lang="fr">
     <head>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="viewport" charset="UTF-8" content="width=device-width,initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css">
     </head>
 
@@ -10,6 +10,7 @@
             <a href="#label">Notre Label</a>
             <a href="#artists">Nos Artistes</a>
             <a href="#live">Concerts</a>
+            <a href="#contact">Contact</a>
 
             <div class="contact">
                 <h3>Nous contacter</h3>
@@ -142,8 +143,34 @@
                     </div>
 
                 </div>
-
             </section>
+
+            <section id="contact">
+                <h1>Contact</h1>
+
+                <div class="content">
+                    <form class="form-contact" method="POST" action="function/mail.php">
+
+                        <div class="field">
+                            <label for="input-name">Nom</label>
+                            <input id="input-name" class="field-input" type="text" name="name" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="input-email">Email</label>
+                            <input id="input-email" class="field-input" type="email" name="email" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="input-msg">Message</label>
+                            <textarea id="input-msg" class="field-input field-text" name="message" required></textarea>
+                        </div>
+
+                        <input class="input-submit" type="submit" value="ENVOYER">
+                    </form>
+                </div>
+            </section>
+
             <footer>
                 <a href="#label">Notre Label</a>
                 <a href="#artists">Nos Artistes</a>

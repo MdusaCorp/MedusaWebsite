@@ -127,3 +127,60 @@ body{
     height: 150px;
     resize: none;
 }
+
+.input-submit {
+    border: none;
+    background-color: #43b77a;
+    color: #fff;
+    padding: 10px 35px;
+    cursor: pointer;
+}
+
+.firstDivOfOurArtist {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.imgArtists {
+    width: 450px;
+    height: 300px;
+    margin: auto;
+}
+
+.imgFlip {
+    width: 50%;
+    perspective: 1000px;
+}
+
+.divImgFlip {
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    display: block;
+    width: 100%;
+}
+
+.imgFlip:hover .divImgFlip {
+    transform: rotateY(180deg);
+}
+
+.imgFront, .imgBack {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    margin-left: 18.5%;
+}
+
+.imgFront {
+    background-color: #bbb;
+    color: black;
+}
+
+.imgBack {
+    color: white;
+    transform: rotateY(180deg);
+    top: 70px;
+    left: 40px;
+    position: absolute;
+}

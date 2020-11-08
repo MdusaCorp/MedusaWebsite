@@ -15,4 +15,4 @@ $headers = array(
 
 mail($to, $subject, $message, $headers);
 
-echo "<script type='text/javascript'>document.location.replace('../index.html');</script>";
+echo "<script type='text/javascript'>document.location.replace('../#');</script>";

@@ -20,19 +20,19 @@
             <li class="nav-item">
                 <a class="nav-link" href="#our_artists">Nos Artistes</a>
             </li>
-            <li class="nav-item">
+            <!--<li class="nav-item">
                 <a class="nav-link" href="#">Nos Récompenses</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Forum</a>
-            </li>
+            </li>-->
             <li class="nav-item">
-                <a class="nav-link" href="#">Contactez nous</a>
+                <a class="nav-link" href="#contact">Contactez nous</a>
             </li>
         </ul>
 
         <div class = "content">
-            <div style = "display: flex; flex-direction: column;">
+            <div style = "display: flex; flex-direction: column;border-bottom: 1px solid;">
                 <div class = "rowOne">
                     <div class ="colOne">
                         <div class = "imgOne">
@@ -55,6 +55,7 @@
             </div>
 
             <div id="our_artists" style = "display: flex; flex-direction: column;">
+                <h3 class="our_artists">NOS ARTISTES</h3>
                 <div class="firstDivOfOurArtist"> <!--prendre la div est la dupliqué pour d'autres artiste -->
                     <div class = "rowOne imgFlip">
                         <div class="divImgFlip">
@@ -81,7 +82,7 @@
                 </div>
             </div>
 
-            <div class="contact">
+            <div class="contact" id="contact">
                 <div class="block-contact">
                     <div class="title-contact">CONTACT</div>
                     <form class="form-contact" action="function/mail.php">
@@ -97,7 +98,7 @@
                             <label for="input-msg">Message</label>
                             <textarea id="input-msg" class="field-input field-text" name="message"></textarea>
                         </div>
-                        <input class="input-submit" type="submit" value="Envoyer">
+                        <input class="input-submit colorSubmit" type="submit" value="Envoyer">
                     </form>
                 </div>
             </div>

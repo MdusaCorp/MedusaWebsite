@@ -13,12 +13,25 @@
     <body>
 
         <ul id="nav" class="nav flex-column menu">
-            <a id ="img" href="#"><img style = "height: 200px;" src = "images/Logo-Mdusa.png"></a>
+            <a id ="img" href="./index.php"><img style = "height: 200px;" src = "images/Logo-Mdusa.png"></a>
             <li class="nav-item">
-                <a class="nav-link" href="#">Notre Label</a>
+                <?php
+                if (strpos( $_SERVER['REQUEST_URI'], 'index.php') > 0 || $_SERVER['REQUEST_URI'] == '/medusa/medusaWebSite/'){
+                    echo '<a class="nav-link colorOn" href="./index.php">Notre Label</a>';
+                } else {
+                    echo '<a class="nav-link" href="./index.php">Notre Label</a>';
+                }
+                ?>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#our_artists">Nos Artistes</a>
+                <?php
+                if (strpos( $_SERVER['REQUEST_URI'], 'our_artists.php') > 0){
+                    echo '<a class="nav-link colorOn" href="./our_artists.php">>Nos Artistes</a>';
+
+                } else {
+                    echo '<a class="nav-link" href="./our_artists.php">Nos Artistes</a>';
+                }
+                ?>
             </li>
             <!--<li class="nav-item">
                 <a class="nav-link" href="#">Nos Récompenses</a>
@@ -27,12 +40,19 @@
                 <a class="nav-link" href="#">Forum</a>
             </li>-->
             <li class="nav-item">
-                <a class="nav-link" href="#contact">Contactez nous</a>
+                <?php
+                if (strpos( $_SERVER['REQUEST_URI'], 'contact.php') > 0){
+                    echo '<a class="nav-link colorOn" href="./contact.php">Contactez nous</a>';
+                } else {
+                    echo '<a class="nav-link" href="./contact.php">Contactez nous</a>';
+                }
+                ?>
             </li>
         </ul>
 
         <div class = "content">
-            <div style = "display: flex; flex-direction: column;border-bottom: 1px solid;">
+            <div style = "display: flex; flex-direction: column;">
+                <h3 class="our_label">NOTRE LABEL</h3>
                 <div class = "rowOne">
                     <div class ="colOne">
                         <div class = "imgOne">
@@ -51,55 +71,6 @@
                         <div class = "imgTwo">
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div id="our_artists" style = "display: flex; flex-direction: column;">
-                <h3 class="our_artists">NOS ARTISTES</h3>
-                <div class="firstDivOfOurArtist"> <!--prendre la div est la dupliqué pour d'autres artiste -->
-                    <div class = "rowOne imgFlip">
-                        <div class="divImgFlip">
-                            <div class ="colOne imgFront">
-                                <img src="./images/led_zeppelin.jpg" class="imgArtists"/>
-                            </div>
-                            <div class ="colOne imgBack">
-                                <h3>LED ZEPPELIN</h3>
-                                <p>Groupe de rock britannique  -  S'inspire de nombreuses sources et genres musicaux : blues, le rock et le folk</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "rowTwo imgFlip">
-                        <div class="divImgFlip">
-                            <div class ="colOne imgFront">
-                                <img src="./images/jimi_hendrix.jpg" class="imgArtists"/>
-                            </div>
-                            <div class ="colOne imgBack">
-                                <h3>JIMI HENDRIX</h3>
-                                <p>Guitariste, auteur-compositeur et chanteur américain</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact" id="contact">
-                <div class="block-contact">
-                    <div class="title-contact">CONTACT</div>
-                    <form class="form-contact" action="function/mail.php">
-                        <div class="field">
-                            <label for="input-name">Nom</label>
-                            <input id="input-name" class="field-input" type="text" name="name">
-                        </div>
-                        <div class="field">
-                            <label for="input-email">Email</label>
-                            <input id="input-email" class="field-input" type="text" name="email">
-                        </div>
-                        <div class="field">
-                            <label for="input-msg">Message</label>
-                            <textarea id="input-msg" class="field-input field-text" name="message"></textarea>
-                        </div>
-                        <input class="input-submit colorSubmit" type="submit" value="Envoyer">
-                    </form>
                 </div>
             </div>
         </div>

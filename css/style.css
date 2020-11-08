@@ -185,7 +185,7 @@ body{
     position: absolute;
 }
 
-.our_artists {
+.our_artists, .our_label, .contact_us {
     text-align: center;
     text-decoration: underline;
     margin: 50px 0px;
@@ -193,4 +193,16 @@ body{
 
 .colorSubmit {
     background-color: #808080;
+}
+
+.colorOn {
+    color: #8b1111;
+}
+
+.our_artists {
+    margin-top: 25vh;
+}
+
+.our_label, .contactMarginTop {
+    margin-top: 10vh;
 }
